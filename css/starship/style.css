@@ -1,0 +1,133 @@
+html, body {
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px; 
+    font-family: Helvetica;
+}
+
+
+.title {
+    background-image: url("../../image/starship/STARSHIP_SN15_Desktop.webp");
+    background-size: cover;
+    background-position-x: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.title h1{
+    margin-top: -4%;
+    font-size: 10vh;
+}
+.title p{
+    margin-top: -2%;
+    font-size: medium;
+}
+.second{
+    height: 100vh;
+    width: 100%;
+    background-image: url("../../image/starship/rideshare_pricing.webp");
+    background-size: cover;
+    background-repeat: space;
+    background-position-x: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+}
+.detail{
+    
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    text-align: center;
+    font-size: large;
+}
+
+.my-btn {
+    background-color: rgba(0, 0, 0, 0);
+    color: white;
+    transition: 0.5s;
+    height: 50px;
+    width: 130px;
+}
+
+.my-btn:hover{
+    background-color: white;
+    color: black;
+    
+}
+
+
+.suretter {
+    width: 60%;
+    background-color:rgba(0, 0, 0, 0);
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-between;
+    font-weight: 400;
+    font-style: normal;
+    font: 60px/60px D-DIN-Light,Arial,Verdana,sans-serif;
+    color:white;
+}
+.suret{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    width: 10%;
+    font-size: xx-large;
+    
+}
+
+@media screen and (max-width:1025px){
+    .detail-container{
+        height: 150vh;
+    }
+
+    .numbers{
+        height: 16.66%;
+        width: 90%;
+    }
+
+    .detail {
+        height: 50%;
+    }
+
+    .d-info {
+        margin-bottom: -125vh;
+        height: 66.66%;
+        width: 100%;
+    }
+
+    .empty {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1025px){
+    .detail-container{
+        height: 133.33vh;
+    }
+
+    .numbers {
+        height: 25%;
+        width: 75%;
+    }
+
+    .detail {
+        height: 75%;
+    }
+
+    .d-info {
+        height: 50%;
+        width: 40%;
+    }
+}

@@ -1,0 +1,69 @@
+.main-content {
+    height: 80vh;
+    width: 100%;
+    position: absolute;
+    top: 20%;
+    background-image: url("../../image/rideshare/earth.webp");
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    color: white;
+}
+
+.title {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    font-size: larger;
+}
+
+.price-bar {
+    height: 10%;
+    width: 70%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.pb-block{
+    height: 100%;
+    font-size: larger;
+    background-color: rgba(20, 20, 20, 1);
+    color: white;
+    border: none;
+    text-align: center;
+}
+
+.button-bar {
+    height: 10%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.button-bar button{
+    height: 100%;
+    width: 25%;
+    background-color: rgba(20, 20, 20, 1);
+    color: white;
+}
+
+@media screen and (max-width:768px){
+    .main-content {
+        height: 100vh;
+    }
+
+    .price-bar {
+        height: 20%;
+        justify-content: center;
+    }
+
+    .pb-block {
+        height: 20%;
+    }
+}
+

@@ -1,0 +1,85 @@
+.main {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-image: url("../../image/findfuture/space.webp");
+    background-size: cover;
+}
+.container {
+    height: 80%;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    color: white;
+}
+
+.title {
+    height: 30%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.search-bar {
+    height: 20%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.search-bar input{
+    height: 40%;
+    width: 100%;
+    background-color: rgba(20, 20, 20, 1);
+    color: white;
+    font-size: x-large;
+}
+
+.search-bar select {
+    height: 40%;
+    width: 100%;
+    background-color: rgba(20, 20, 20, 1);
+    color: white;
+}
+
+.btn-bar {
+    height: 7%;
+    width: 25%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.btn-bar button {
+    height: 100%;
+    width: 49%;
+    background-color: rgba(20, 20, 20, 0);
+    color: white;
+    transition: 1s;
+}
+
+.btn-bar button:hover {
+    background-color: white;
+    color: black;
+}
+
+@media screen and (max-width:768px){
+    .title {
+        width: 90%;
+    }
+
+    .search-bar {
+        width: 90%;
+    }
+
+    .btn-bar {
+        width: 90%;
+    }
+}

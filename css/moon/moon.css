@@ -1,0 +1,186 @@
+@font-face {
+    font-family: 'D-DIN';
+    src: url('../nav/fonts/d-din/D-DIN-Bold.woff2') format('woff2'),
+        url('../nav/fonts/d-din/D-DIN-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'D-DIN';
+    src: url('../nav/fonts/d-din/D-DIN.woff2') format('woff2'),
+        url('../nav/fonts/d-din/D-DIN.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    border-sizing: border-box;
+    font-family: 'D-DIN', Arial, Verdana, sans-serif;
+    line-height: 1.4;
+    
+    background-color: black;
+}
+
+.section {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.moon {
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+    object-position: center;
+}
+
+.the_moon {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -100%);
+
+    text-align: center;
+}
+.title {
+    color: white;
+    font-weight: bold;
+    font-size: 100px;
+}
+.capital {
+    text-transform: uppercase;
+}
+.subtitle {
+    color: white;
+    font-size: 20px;
+}
+
+
+/* Second section */
+
+.section_2 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.the_human {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -300%);
+
+    text-align: center;
+}
+
+
+/* Third section */
+.section_3 {
+    width: 100%;
+    height: 100vh;
+    position: relative;
+}
+
+.wrap-table {
+    position: absolute;
+    top: 50%;
+    right: 50px;
+    transform: translate(-14%, -55%);
+}
+
+
+.table-title {
+    color: white;
+    font-size: 46px;
+    font-weight: bold;
+}
+
+.table-subtitle {
+    padding: 20px 0 25px;
+
+    color: white;
+    font-size: 16px;
+}
+
+
+span {
+    opacity: .5;
+}
+
+table {
+    color: white;
+    border-collapse: collapse;
+}
+
+td, th {
+    border-bottom: 1px solid rgb(228, 226, 226);
+
+    padding: 20px 0;
+    width: 252px;
+
+    font-size: 14px;
+}
+
+th {
+    text-align: start;
+}
+
+td {
+    text-align: end;
+}
+
+tspan {
+    color: blue;
+}
+
+
+/* to the moon */
+
+.to_moon {
+    background-color: black;
+}
+
+.to_moon-text {
+    color: white;
+
+    margin-left: 100px;
+}
+
+.to_moon-title {
+    font-size: 48px;
+    font-weight: bold;
+    line-height: 1.1;   
+}
+
+.to_moon-subtitle {
+    font-size: 16px;
+    margin: 20px 0 15px;
+}
+
+.block {
+    width: 90%;
+    margin: 0 auto;
+}
+
+.moon_points {
+    color: white;
+    text-align: center;
+
+    width: 85%;
+    margin: 0 auto; 
+
+    display: flex;
+    justify-content: space-between;
+}
+
+.point {
+    font-size: 14px;
+    font-weight: bold;
+    margin: 0 50px 20px 0;
+}

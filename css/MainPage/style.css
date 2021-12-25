@@ -1,0 +1,176 @@
+@font-face {
+    font-family: 'D-DIN';
+    src: url('../fonts/d-din/D-DIN-Bold.woff2') format('woff2'),
+        url('../fonts/d-din/D-DIN-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'D-DIN';
+    src: url('../fonts/d-din/D-DIN.woff2') format('woff2'),
+        url('../fonts/d-din/D-DIN.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+body {
+    font-family: 'D-DIN', Arial, Verdana, sans-serif;
+}
+.main_div{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.out-animation{
+    opacity: 0;
+    -webkit-transform: translateX(80px);
+    -moz-transform: translateX(80px);
+    transform: translateX(80px);
+}
+@keyframes div1_animate {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+}
+@keyframes main_div_animate {
+    from{
+        bottom: 20vh;
+        opacity: 0;
+    }
+    to{
+        bottom: 50px;
+        opacity: 1;
+    }
+}
+#in_main_div1{
+    animation: main_div_animate 4s;
+}
+hr{
+    border-color: black;
+}
+#end{
+    background-image: url(image/index/blackSky.jfif);
+    padding: auto;
+    width: 100%;
+}
+.list{
+    display: flex;
+    justify-content: center;
+}
+textarea{
+    width: 100%;
+}
+#ul_ol{
+    width: 100%;
+    display: grid;
+    grid-template-columns: auto auto auto;
+    grid-template-rows: auto auto auto;
+    font-size: 1.5vw;
+    color: white;
+}
+#tr{
+    color: white;
+    text-align: center;
+}
+#div1{
+    animation: div1_animate 4s;
+    background-image: url(../../image/index/launch.webp);
+    background-color: hsla(0, 0, 0, 1);
+    background-position-x: 70%;
+}
+#div2{
+    background-image: url(../../image/index/DART_MAINPAGE_DESKTOP.webp);
+}
+#div3{
+    background-image: url(../../image/index/Starlink4-3_desktop_homepage.webp);
+}
+#div4{
+    background-image: url(../../image/index/Homepage_Crew3_outside_Desktop.webp);
+}
+#div5{
+    background-image: url(../../image/index/hls-resized-2.webp);
+    background-position-x:  70%;
+}
+.text{
+    color: rgba(255, 255, 255, 1);
+    font-family: 'D-DIN-Bold',Arial,Verdana,sans-serif;
+}
+.in_main{
+    overflow: hidden;
+    position: relative;
+    bottom: 50px;
+    left: 10vh;
+    max-width: 600px;
+}
+.title{
+    font-weight: bold;
+    font-size: 3vw;
+}
+.rec{
+    font-weight: 400;
+
+}
+.div_icon{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+@media (max-width: 1200px) {
+    
+}
+@media (max-width: 1000px) {
+    .in_main{
+        position: relative;
+        left: 50px;
+        bottom: 50px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        max-width: 420px;
+    }
+    .title{
+        font-size: 40px;
+    }
+}
+@media (max-width: 500px) {
+    .main_div{
+        background-position-x: 50%;
+    }
+}
+@keyframes scroll_animate {
+    0%{ 
+        opacity: 1;
+    }
+    50%{
+        opacity: 0;
+    }
+    100%{
+        opacity: 1;
+    }
+}
+.arrow_down{
+    animation: scroll_animate 2s infinite;
+}
+.btn{
+    padding: auto;
+    background-color: white;
+    color: black;
+    border-radius: 10px;
+    border-width: 0px;
+    font-family: 'D-DIN', Arial, Verdana, sans-serif;   
+    font-weight: 600;
+}
+.btn:hover{
+    background-color: #e2e6ea;
+}

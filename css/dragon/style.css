@@ -1,0 +1,121 @@
+html, body {
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px; 
+    font-family: Helvetica;
+    color: white;
+    background-color: black;
+}
+
+
+.title {
+    background-image: url("../../image/dragon/dragon_feature.webp");
+    background-size: cover;
+    background-position-x: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.title h1{
+    margin-top: -4%;
+    font-size: 10vh;
+}
+.title h5{
+    margin-top: -2%;
+    font-size: medium;
+}
+.detail-container {
+    height: 100vh;
+    width: 100%;
+    background-image: url("../../image/dragon/dragon_humans.webp");
+    background-size: cover;
+    background-repeat: space;
+    background-position-x: 33.33%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.detail {
+    margin-left: -5%;
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    justify-content: space-around;
+    text-align: center;
+}
+.surak{
+    display:flex;
+    flex-direction: row;
+    align-items:center ;
+    justify-content: center;
+}
+
+.surak2 {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.radio1{
+    display: flex;
+    justify-content: center;
+}
+
+@media screen and (max-width:1025px){
+    .detail-container {
+        align-items: center;
+    }
+
+    .takryp {
+        position: absolute;
+        top: 90vh;
+    }
+
+    .detail {
+        margin-bottom: -150vh;
+        width: 90%;
+    }
+
+    .surak {
+        width: 90%;
+    }
+
+    .surak2 {
+        width: 90%;
+    }
+
+    .radio1{
+        width: 90%;
+        margin-bottom: 10%;
+    }
+}
+
+
+@media screen and (min-width: 1025px){
+    .detail-container {
+        align-items: flex-end;
+    }
+}
+
+
+    
+
+
+
+
+
+
+
+
+
+

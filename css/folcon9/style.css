@@ -1,0 +1,138 @@
+html, body {
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px; 
+}
+
+
+.title {
+    background-image: url("../../image/falcon9/falcon9.webp");
+    background-size: cover;
+    background-position-x: 50%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-align: center;
+}
+
+.title h1{
+    margin-top: -4%;
+    font-size: 10vh;
+}
+.title p{
+    margin-top: -2%;
+    font-size: medium;
+}
+
+.detail-container {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color:rgb(0, 0, 0);  
+}
+
+.numbers {
+    background-color: hsla(0, 0, 0, 0);
+    display: flex;
+    text-align: center;
+    color: white;
+}
+
+.number{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 33%;
+    font-size: xx-large;
+}
+
+.number-desc {
+    font-size: medium;
+    margin-top: -20%;
+}
+
+.detail {
+    width: 100%;
+    background-image: url("../../image/falcon9/rocket_model.webp");
+    background-size: cover;
+    background-repeat: space;
+    background-position-x: 60%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    justify-items: center;
+}
+
+.d-info {
+    background-color: hsla(0, 0, 0, 0);
+    color: rgb(225, 225, 225);
+    text-align: left;
+}
+
+.right-align{
+    text-align: right;
+}
+
+.empty {
+    height: 100%;
+    width: 40%;
+    background-color: #ffffff00 ;
+}
+
+@media screen and (max-width:1025px){
+    .detail-container{
+        height: 150vh;
+    }
+
+    .numbers{
+        height: 13.33%;
+        width: 90%;
+    }
+
+    .number {
+        font-size: 4vh;
+    }
+
+    .detail {
+        height: 53.33%;
+    }
+
+    .d-info {
+        margin-bottom: -125vh;
+        height: 62.5%;
+        width: 100%;
+    }
+
+    .empty {
+        display: none;
+    }
+}
+
+@media screen and (min-width: 1025px){
+    .detail-container{
+        height: 133.33vh;
+    }
+
+    .numbers {
+        height: 25%;
+        width: 75%;
+    }
+
+    .number {
+        font-size: 10vh;
+    }
+
+    .detail {
+        height: 75%;
+    }
+
+    .d-info {
+        height: 50%;
+        width: 40%;
+    }
+}

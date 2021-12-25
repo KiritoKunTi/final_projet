@@ -1,0 +1,86 @@
+body{
+    height: 100vh;
+}
+main{
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#main{
+    width: 400px;
+    padding-bottom: 50px;
+}
+#login{
+    display: flex;
+    justify-content: center;
+    font-family: "DIN Neuzeit Grotesk",sans-serif;
+    font-size: 24px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+#pl{
+    display: flex;
+    justify-content: center;
+    font-size: inherit;
+    font-family: Roboto,sans-serif;
+    color: #5c5c5c;
+    width: 100%;
+    font-weight: 400;
+    opacity: 0.8;
+}
+#form_header{
+    display: flex;
+    flex-direction: column;
+    align-items: center ;
+    width: 100%;
+    margin-bottom: 24px ;
+    font-family: Roboto,sans-serif;
+    font-size: 15px;
+}
+.in_main{
+    margin-bottom: 15px;
+    width: 100%;
+}
+input{
+    border-width: 1px;
+    border-color: rgb(231, 231, 231);
+    font-size: 15px;
+    height: 19px;
+    width: 370px;
+    padding: 12px 14px 12px 14px;
+}
+
+#button{
+    background: linear-gradient(to left, black 50%, white 50% ) right;
+    background-size: 200%;  
+    color: white;
+    background-color: hsl(0,0,100);
+    display: flex;
+    justify-content: center;
+    width: 342px;
+    height: 16px;
+    border: 1px solid;
+    padding: 14px 28px 14px 28px;
+    margin-top: 20px;
+    transition: ease-in 0.4s;
+}
+#button:hover{
+    background-position: left;
+    color: black;
+}
+#ask{
+    font-family: Roboto,sans-serif;
+    font-weight: 300;
+    color: rgb(50, 50, 50);
+}
+#new1{
+    font-family: Roboto,sans-serif;
+    font-weight: 300;
+    color: rgb(120, 120, 120);
+    margin-left: 5px;
+}
+#register{
+    display: flex;
+    justify-content: center;
+}
